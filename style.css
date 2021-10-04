@@ -20,7 +20,7 @@ z-index: 111;
 
 .container-01 nav{
     line-height: 60px;
-    padding: 0px 30px 0px 80px;
+    padding: 0px 100px 0px 80px;
     background-color: #375A7F !important;
     //position: fixed;
     //left:0;
@@ -29,7 +29,7 @@ z-index: 111;
 }
 .container-01 nav a{
     line-height: 60px;
-    padding: 0px 50px !important;
+    padding: 0px 30px !important;
     color:#fff !important;
     margin-right: 10px;
 }
@@ -38,6 +38,7 @@ z-index: 111;
 }
 .main-container ul{
     padding: 20px;
+
 }
 .main-container li
 {
@@ -61,10 +62,10 @@ z-index: 111;
     //margin-left:auto;
     //margin-right:auto;
     flex-direction:column;
-     margin-top:80px;
+     margin-top:100px;
     //width: 600px;
     padding:0px 15px;
-    margin-bottom:60px;
+    //margin-bottom:60px;
     position: relative;
 }
 
@@ -88,7 +89,7 @@ z-index: 111;
 {
     background-color: #282F2F;
     border-radius: 6px;
-    padding: 15px;
+    padding: 30px 15px;
     width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -175,14 +176,26 @@ button:hover, .form-control:hover{
 
 
 
-.form-area2
+.form-section
 {
-    display:none;
+    display: flex;
+    overflow: hidden;
 }
-.normal-display
+
+.form-section .form-area, .form-section .form-area2
 {
-    display: block;
+    min-width: 100%;
+    transition: all .2s linear;
+
 }
+
+.form-area-transform, .form-area2-transform
+{
+    transform: translateX(-100%);
+
+}
+
+
 
 .click
 {
@@ -272,6 +285,33 @@ button:hover, .form-control:hover{
 
 
 
+/*-------------------------- privacy section-------------------------*/
+.privay-section h2,p
+{
+    color:#fff;
+   
+}
+
+.privay-section h2
+{
+    margin-top: 30px;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.privay-section ul
+{
+    margin: -30px 0px;
+}
+.privay-section ul li{
+    letter-spacing: .3px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.privay-section ul li p{
+    font-size: 25px;
+    font-weight: unset !important
+}
+
 
 
 
@@ -284,7 +324,11 @@ button:hover, .form-control:hover{
     width:auto;
     padding: 15px 0px;
 }
+.main-container ul li a{
+    //padding: 10px 20px;
+    line-height: 40px;
 
+}
 
 }
 @media only screen and (max-width:768px){
